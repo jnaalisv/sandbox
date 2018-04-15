@@ -9,12 +9,14 @@ repositories {
 ext {
     JUnitVersion = "5.1.1"
     mockitoVersion = "2.18.0"
+    assertJVersion = "3.9.0"
 }
 
 dependencies {
     testCompile("org.junit.jupiter:junit-jupiter-api:${JUnitVersion}")
     testCompile("org.mockito:mockito-core:${mockitoVersion}")
     testCompile("org.mockito:mockito-junit-jupiter:${mockitoVersion}")
+    testCompile("org.assertj:assertj-core:${assertJVersion}")
 
     testRuntime("org.junit.jupiter:junit-jupiter-engine:${JUnitVersion}")
 }
